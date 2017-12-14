@@ -1,0 +1,262 @@
+
+@-moz-document url-prefix('https://neocities.org') {}
+
+.interior .page, .col.col-66 {
+    background: #080808 !important;
+}
+
+.interior .header-Outro.with-columns .col-66 {
+    border: none;
+}
+
+.header-Outro.with-columns, .row.conten, .footer-Outro,.header-Outro {
+    background: #080808;
+    border: none;
+}
+
+.interior .page, .col.col-33 {
+    background: #101010;
+}
+
+.container.news-feed {
+	box-shadow: none;
+}
+
+.interior .title .text {
+    color: #BBB !important;
+}
+
+.interior .title .text a {
+    color: #EEE !important;
+}
+
+.header-Nav.clearfix, .header-Base {
+	background: #000 !important;
+    border-bottom: 3px solid #2A2A2A;
+}
+
+.content.misc-page.columns.right-col, .col-left {
+    background: #101010;
+    border: none;
+}
+
+.files {
+	background: #080808 !important;
+}
+
+.news-item.update .icon {
+	background: #666699;
+}
+
+.news-item.follow .icon {
+    background: #003366;
+}
+
+.news-item.comment .icon {
+	background: #b3b3d7;
+}
+
+.post-comment {
+	background: #161616;
+    border-radius: 2px;
+}
+
+.post-comment input {
+    border-radius: 2px;
+}
+
+.btnAction.edit, .btn-Action {
+	background: #666699 !important;
+    background: -webkit-linear-gradient(top, #666699, #666699) !important;
+}
+
+h3 a, .page p a {
+    color: #555 !important;
+}
+
+.following-list, .follower-list {
+	filter: grayscale( 100% );
+}
+
+.following-list:hover, .follower-list:hover {
+	filter: grayscale(0);
+}
+
+li a:hover {
+	background: #2A2A2A !important;
+}
+
+.tag, a.tag {
+	background: #242424 !important;
+    color: #AAA !important;
+    border-radius: 2px;
+}
+
+.logo.int-Logo img {
+	filter: hue-rotate( 200deg );
+}
+
+.clear a {
+    color: #888 !important;
+}
+
+.news-item {
+    border: none;
+}
+
+.news-item.comment .content,
+.news-item.update .content,
+.news-item.tip .content{
+    color: #CCC !important;
+}
+
+.news-item.comment .content a,
+.news-item.update .content a,
+.news-item.tip .content a {
+    color: #666699 !important;
+}
+
+.news-item.comment .content .comments .comment,
+.news-item.update .content .comments .comment,
+.news-item.tip .content .comments .comment {
+    color: #DDD !important;
+}
+
+.news-item.comment .actions,
+.news-item.update .actions,
+.news-item.tip .actions {
+    color: #b3b3d7 !important;
+}
+
+.news-item.comment .actions, a#reply, a#like,
+.news-item.update .content a {
+    color: #b3b3d7 !important;
+}
+
+.date a {
+	color: #AAA !important;
+}
+
+.pagination a {
+	color: #b3b3d7 !important;
+}
+
+.row.website-Gallery.content.int-Gall li {
+	background: #141414 !important;
+    border: 9px solid #141414;
+}
+
+.row.website-Gallery.content.int-Gall li .title a, .fa-heart {
+    color: #b3b3d7 !important;
+}
+
+.dropdown-menu {
+	background: #2a2a2a !important;
+}
+
+.dropdown-menu .divider {
+        border-bottom: 1px solid #464646 !important;
+}
+
+.content.single-Col.misc-page {
+	background: #101010;
+}
+
+.content.single-Col.misc-page .files {
+    background: #101010 !important;
+}
+
+.content.single-Col.misc-page {
+	color: #DDD !important;
+}
+
+.content.single-Col.misc-page a {
+	color: #b3b3d7 !important;
+}
+
+.section.plans.welcome, .section, .plan-chart td, .col.supporter, .col.free {
+	background: #101010 !important;
+    color: #DDD !important;
+    border: solid 1px #444 !important;
+}
+
+.col.supporter h3, .col.free h3, .row.content.txt-Center a {
+    color: #b3b3d7 !important; 
+}
+
+.col.supporter .row.content .col.col-66 {
+	background: #101010 !important;
+}
+
+.face.front.invalid {
+    filter: invert();
+}
+
+.stats a {
+    color: #b3b3d7 !important;
+}
+
+.header-Outro .signup-Form, fieldset.content {
+	background: #080808 !important;
+}
+
+main.content-Base {
+	background: #080808 !important;
+}
+
+.files.list-view .list .file:nth-child(even) {
+	background: #101010;
+}
+
+.files .header {
+    background: #080808 !important;
+}
+
+.overlay a {
+    color: #b3b3d7 !important;
+}
+
+.row.content.wide .col.col-50 a {
+	color: #b3b3d7 !important;
+}
+
+.comic .dialogue {
+	color: #000 !important;
+    background: rgba( 255, 255, 255, .5 );
+    border-radius: 8px;
+    z-index: 6 !important;
+}
+
+.welcome {
+	background-color: #080808 !important;
+    border-radius: 6px;
+}
+
+code, pre {
+    border-color: #778899;
+}
+
+.header-Nav a.small-Nav {
+	background: rgba( 0, 0, 0, 0 );
+}
+
+.press-news h3 a {
+	color: #DDD !important;
+}
+
+.press-news blockquote {
+	color: #778899;
+}
+
+.brand-asset {
+	background: #080808;
+    border-radius: 4px;
+}
+
+.accordion-group {
+	border: none;
+}
+
+.accordion-group a {
+    text-decoration: none !important;
+}
