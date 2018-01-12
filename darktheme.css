@@ -1,225 +1,259 @@
-
 @-moz-document url-prefix('https://neocities.org') {}
 
-.interior .page, .col.col-66 {
-    background: #080808 !important;
-}
 
-.interior .header-Outro.with-columns .col-66 {
-    border: none;
-}
 
-.header-Outro.with-columns, .row.conten, .footer-Outro,.header-Outro {
-    background: #080808;
-    border: none;
-}
+/* Top-right dropdown menu */
+.dropdown-menu { background: #2a2a2a !important; }
+.dropdown-menu .divider { border-bottom: 1px solid #464646 !important; }
 
-.interior .page, .col.col-33 {
+
+
+/*** 
+****  Index and most other pages
+***/
+
+
+
+/* Main background 1 (left side)*/
+.content.misc-page.columns.right-col, 
+.col-left {
     background: #101010;
+    border: none;
 }
 
-.container.news-feed {
-	box-shadow: none;
-}
+/* Main background 2 (feed, right side) */
+.page, 
+.col.col-66 { background: #080808 !important; }
 
-.interior .title .text {
-    color: #BBB !important;
-}
+/* Main background 3 (site info) */
+.col.col-33 { background: #101010; }
 
-.interior .title .text a {
-    color: #EEE !important;
-}
 
-.header-Nav.clearfix, .header-Base {
+
+/* Main navbar background */
+.header-Nav.clearfix, 
+.header-Base {
 	background: #000 !important;
     border-bottom: 3px solid #2A2A2A;
 }
 
-.content.misc-page.columns.right-col, .col-left {
-    background: #101010;
+
+
+/* Top background 1 (behind Your Feed nav area) */
+.header-Outro.with-columns, 
+.row.conten, 
+.footer-Outro,
+.header-Outro {
+    background: #080808;
     border: none;
 }
 
-.files {
-	background: #080808 !important;
-}
+/* Removes border around "Your Feed" navigation area */
+.interior .header-Outro.with-columns .col-66 { border: none; }
 
-.news-item.update .icon {
-	background: #666699;
-}
 
-.news-item.follow .icon {
-    background: #003366;
-}
 
-.news-item.comment .icon {
-	background: #b3b3d7;
-}
+/* Shadow around site info */
+.container.news-feed { box-shadow: none; }
 
+
+
+/* Site action info text 
+	X <followed> Y 
+	X <was updated> 
+*/ .title .text { color: #BBB !important; }
+
+
+/* Sites text
+	<X> followed <Y>
+*/ .title .text a { color: #EEE !important; }
+
+
+
+/* Site previews */
+.files { background: #080808 !important; }
+
+
+
+/* Site avatars */
+.news-item.update  .icon { background: #666699; }
+.news-item.follow  .icon { background: #003366; }
+.news-item.comment .icon { background: #b3b3d7; }
+
+
+
+/* "Post a message..." field background */
 .post-comment {
 	background: #161616;
     border-radius: 2px;
 }
 
-.post-comment input {
-    border-radius: 2px;
-}
+/* Post message input field */
+.post-comment input { border-radius: 2px; }
 
-.btnAction.edit, .btn-Action {
+
+
+/* Most rounded buttons like (Edit Site) and (Profile) 
+	(Make sure to also set the gradient values) */ 
+.btnAction.edit, 
+.btn-Action {
 	background: #666699 !important;
     background: -webkit-linear-gradient(top, #666699, #666699) !important;
 }
 
-h3 a, .page p a {
-    color: #555 !important;
-}
 
-.following-list, .follower-list {
-	filter: grayscale( 100% );
-}
 
-.following-list:hover, .follower-list:hover {
-	filter: grayscale(0);
-}
+/* Your big site title and URL */
+h3 a, 
+.page p a { color: #555 !important; }
 
-li a:hover {
-	background: #2A2A2A !important;
-}
 
-.tag, a.tag {
+
+/* Following / followers hover effect, you can get rid of this */
+.following-list, 
+.follower-list { filter: grayscale( 100% ); }
+
+.following-list:hover, 
+.follower-list:hover { filter: grayscale(0); }
+
+
+
+/* Main nav bar button backgrounds when you hover over them */
+li a:hover { background: #2A2A2A !important; }
+
+
+
+/* Site tags */
+.tag, 
+a.tag {
 	background: #242424 !important;
     color: #AAA !important;
     border-radius: 2px;
 }
 
-.logo.int-Logo img {
-	filter: hue-rotate( 200deg );
-}
 
-.clear a {
-    color: #888 !important;
-}
 
-.news-item {
-    border: none;
-}
+/* Hue change on the Neocities logo in the corner */
+.logo.int-Logo img { filter: hue-rotate( 200deg ); }
 
+/* Add/Remove tag butttons */
+.clear a { color: #888 !important; }
+
+
+
+/* Border around site updates and info*/
+.news-item { border: none; }
+
+/* Text color for site comments and stuff like that
+	This first one doesn't apply to replies */
 .news-item.comment .content,
-.news-item.update .content,
-.news-item.tip .content{
+.news-item.update  .content,
+.news-item.tip     .content{
     color: #CCC !important;
 }
 
 .news-item.comment .content a,
-.news-item.update .content a,
-.news-item.tip .content a {
+.news-item.update  .content a,
+.news-item.tip     .content a {
     color: #666699 !important;
 }
 
 .news-item.comment .content .comments .comment,
-.news-item.update .content .comments .comment,
-.news-item.tip .content .comments .comment {
+.news-item.update  .content .comments .comment,
+.news-item.tip     .content .comments .comment {
     color: #DDD !important;
 }
 
 .news-item.comment .actions,
-.news-item.update .actions,
-.news-item.tip .actions {
+.news-item.update  .actions,
+.news-item.tip     .actions {
     color: #b3b3d7 !important;
 }
 
+/* Site post edit buttons (Like and Reply only becuase yeah) */
 .news-item.comment .actions, a#reply, a#like,
-.news-item.update .content a {
+.news-item.update  .content  a {
     color: #b3b3d7 !important;
 }
 
-.date a {
-	color: #AAA !important;
-}
 
-.pagination a {
-	color: #b3b3d7 !important;
-}
 
+/* Page numbers at the bottom of the feed */
+.pagination a { color: #b3b3d7 !important; }
+
+
+
+/***
+****  Websites page
+***/
+
+
+
+/* Website card backgrounds */
 .row.website-Gallery.content.int-Gall li {
 	background: #141414 !important;
     border: 9px solid #141414;
 }
 
-.row.website-Gallery.content.int-Gall li .title a, .fa-heart {
-    color: #b3b3d7 !important;
-}
 
-.dropdown-menu {
-	background: #2a2a2a !important;
-}
 
-.dropdown-menu .divider {
-        border-bottom: 1px solid #464646 !important;
-}
+/* Site titles and supporter hearts */
+.row.website-Gallery.content.int-Gall li .title a, 
+.fa-heart { color: #b3b3d7 !important; }
 
-.content.single-Col.misc-page {
-	background: #101010;
-}
 
-.content.single-Col.misc-page .files {
-    background: #101010 !important;
-}
 
-.content.single-Col.misc-page {
-	color: #DDD !important;
-}
+/***
+****  Other shit like tutorials and upgrade to supporter and stuff
+***/
 
-.content.single-Col.misc-page a {
-	color: #b3b3d7 !important;
-}
 
+
+/* Backgrounds and stuff on pages I guess 
+	Stuff like /tutorials/ for example */
+/*  BG  */ .content.single-Col.misc-page { background: #101010; }
+/*  BG  */ .content.single-Col.misc-page .files { background: #101010 !important; }
+/* Text */ .content.single-Col.misc-page { color: #DDD !important; }
+/* Link */ .content.single-Col.misc-page a { color: #b3b3d7 !important; }
+
+
+
+/* Page backgrounds and text on the actual tutorial slides */
 .section.plans.welcome, .section, .plan-chart td, .col.supporter, .col.free {
 	background: #101010 !important;
     color: #DDD !important;
     border: solid 1px #444 !important;
 }
 
-.col.supporter h3, .col.free h3, .row.content.txt-Center a {
-    color: #b3b3d7 !important; 
-}
 
-.col.supporter .row.content .col.col-66 {
-	background: #101010 !important;
-}
 
-.face.front.invalid {
-    filter: invert();
-}
 
-.stats a {
-    color: #b3b3d7 !important;
-}
+/****    Everything below is optional    ****/
+/****    In other words, don't bother    ****/
 
-.header-Outro .signup-Form, fieldset.content {
-	background: #080808 !important;
-}
 
-main.content-Base {
-	background: #080808 !important;
-}
 
-.files.list-view .list .file:nth-child(even) {
-	background: #101010;
-}
 
-.files .header {
-    background: #080808 !important;
-}
+/* Shit I don't care about and nobobdy probably ever will 
+	so come on now, just remove this entire section, nobody 
+	wants a custom theme for the tutorials, the images take
+	up most of the screen and they're white anyway. */
+.col.supporter h3, .col.free h3, .row.content.txt-Center a { color: #b3b3d7 !important; }
+.col.supporter .row.content .col.col-66 { background: #101010 !important; }
 
-.overlay a {
-    color: #b3b3d7 !important;
-}
+/* This inverts the credit card on /supporter/ */
+.face.front.invalid { filter: invert(); }
 
-.row.content.wide .col.col-50 a {
-	color: #b3b3d7 !important;
-}
+.stats a { color: #b3b3d7 !important; }
+.header-Outro .signup-Form, fieldset.content { background: #080808 !important; }
+main.content-Base { background: #080808 !important; }
+.files.list-view .list .file:nth-child(even) { background: #101010; }
+.files .header { background: #080808 !important; }
+.overlay a { color: #b3b3d7 !important; }
+.row.content.wide .col.col-50 a { color: #b3b3d7 !important; }
 
+
+/* Text in Penelope's (that orange rabbit) speech bubbles */
 .comic .dialogue {
 	color: #000 !important;
     background: rgba( 255, 255, 255, .5 );
@@ -227,36 +261,32 @@ main.content-Base {
     z-index: 6 !important;
 }
 
+
+
+/* I don't know what this does probably something on the upgrade 
+	to supporter page idk */
 .welcome {
-	background-color: #080808 !important;
+	background-color: #101010 !important;
     border-radius: 6px;
 }
 
-code, pre {
-    border-color: #778899;
-}
 
-.header-Nav a.small-Nav {
-	background: rgba( 0, 0, 0, 0 );
-}
 
-.press-news h3 a {
-	color: #DDD !important;
-}
+/* No idea */
+code, pre { border-color: #778899; }
+.header-Nav a.small-Nav { background: rgba( 0, 0, 0, 0 ); }
+.press-news h3 a { color: #DDD !important; }
+.press-news blockquote { color: #778899; }
 
-.press-news blockquote {
-	color: #778899;
-}
 
+
+/* Nope */
 .brand-asset {
 	background: #080808;
     border-radius: 4px;
 }
 
-.accordion-group {
-	border: none;
-}
 
-.accordion-group a {
-    text-decoration: none !important;
-}
+/* You guessed it */
+.accordion-group { border: none; }
+.accordion-group a { text-decoration: none !important; }
